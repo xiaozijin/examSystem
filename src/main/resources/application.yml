@@ -1,0 +1,38 @@
+server:
+  port: 8080
+spring:
+  #配置mysql
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/db_examsystem?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # thymeleaf
+  thymeleaf:
+      cache: false
+      prefix: classpath:/templates/
+      suffix: .html
+  #配置redis
+  redis:
+    host: 127.0.0.1
+    password: 123456
+    port: 6379
+  #配置邮件信息
+  mail:
+    host: smtp.qq.com
+    #邮箱地址
+    username: 1608665578@qq.com
+    #授权码
+    password: gefwxuyirhhafegg
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+  #设置时间格式
+  mvc:
+    date-format: yyyy-MM-dd
+#mybatis位置定位
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml

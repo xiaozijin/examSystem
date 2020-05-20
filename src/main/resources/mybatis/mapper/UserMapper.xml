@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.examSystem.dao.UserDao">
+
+    <!--<resultMap id="userMap" type="com.demo.examSystem.entity.User">-->
+        <!--<result property="id" column="id"/>-->
+        <!--<result property="username" column="username"/>-->
+        <!--<result property="password" column="password"/>-->
+        <!--<result property="email" column="email"/>-->
+        <!--<result property="activeStatus" column="active_status"/>-->
+        <!--<result property="activeCode" column="active_code"/>-->
+    <!--</resultMap>-->
+
+    <!--<insert id="insert" parameterType="com.demo.examSystem.entity.User">-->
+        <!--insert into t_user ( username, password,email,active_status,active_code)-->
+        <!--values (#{username}, #{password}, #{email},#{activeStatus},#{activeCode})-->
+    <!--</insert>-->
+
+    <!--<select id="selectUserByActiveCode" parameterType="String" resultType="com.demo.examSystem.entity.User">-->
+        <!--select * from t_user where active_code = #{activeCode}-->
+    <!--</select>-->
+
+    <!--<update id="update" parameterType="com.demo.examSystem.entity.User">-->
+        <!--update t_user-->
+      <!--set active_status=#{activeStatus},username=#{username},password=#{password},-->
+          <!--email=#{email}, active_status=#{activeStatus},active_code=#{activeCode}-->
+      <!--where id=#{id}-->
+    <!--</update>-->
+
+    <!--<select id="select" resultType="com.demo.examSystem.entity.User">-->
+         <!--select * from t_user where username=#{username} and password=#{password} and active_status=1-->
+    <!--</select>-->
+
+    <!--<select id="queryAll" resultType="com.demo.examSystem.entity.User">-->
+        <!--select * from t_user where active_status=1-->
+    <!--</select>-->
+    <!---->
+    <!--<delete id="deleteById" parameterType="int">-->
+        <!--delete from t_user where id=#{id}-->
+    <!--</delete>-->
+
+</mapper>
